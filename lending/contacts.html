@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Shadowfall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__mark">◆</div>
+        <div class="preloader__text">SHADOWFALL</div>
+        <div class="preloader__bar"></div>
+    </div>
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-mark">◆</span>
+                <span class="nav__logo-text">SHADOWFALL</span>
+            </a>
+            <nav class="nav__menu" id="navMenu">
+                <a href="index.html" class="nav__link">Главная</a>
+                <a href="about.html" class="nav__link">Об игре</a>
+                <a href="features.html" class="nav__link">Особенности</a>
+                <a href="media.html" class="nav__link">Медиа</a>
+                <a href="download.html" class="nav__link">Скачать</a>
+                <a href="contacts.html" class="nav__link is-active">Контакты</a>
+            </nav>
+            <a href="download.html" class="nav__cta">Играть</a>
+            <button class="nav__burger" id="navBurger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="page-hero__bg image-placeholder" data-label="ФОН — КОНТАКТЫ 1920×800"></div>
+            <div class="page-hero__overlay"></div>
+            <div class="page-hero__inner">
+                <nav class="breadcrumbs reveal">
+                    <a href="index.html">Главная</a>
+                    <span>/</span>
+                    <span>Контакты</span>
+                </nav>
+                <h1 class="page-hero__title reveal">Контакты</h1>
+                <p class="page-hero__sub reveal">Есть вопросы, идеи или баги? Напиши нам.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <!-- ФОРМА -->
+                    <div class="reveal">
+                        <h2 style="margin-bottom: 32px;">Написать нам</h2>
+
+                        <form onsubmit="event.preventDefault(); alert('Сообщение отправлено! (заглушка)');">
+                            <div class="form__group">
+                                <label class="form__label" for="name">Имя</label>
+                                <input class="form__input" type="text" id="name" placeholder="Твой ник" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label" for="email">Email</label>
+                                <input class="form__input" type="email" id="email" placeholder="you@example.com"
+                                    required>
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label" for="msg">Сообщение</label>
+                                <textarea class="form__textarea" id="msg" placeholder="Опиши свой вопрос..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary">
+                                <span>Отправить</span>
+                                <span class="btn__arrow">→</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- СОЦ-СЕТКИ -->
+                    <div class="reveal">
+                        <h2 style="margin-bottom: 32px;">Мы в сети</h2>
+
+                        <div class="social-list">
+                            <a href="#" class="social-link">
+                                <span class="social-link__name">Discord</span>
+                                <span class="social-link__arrow">→</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span class="social-link__name">Telegram</span>
+                                <span class="social-link__arrow">→</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span class="social-link__name">YouTube</span>
+                                <span class="social-link__arrow">→</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span class="social-link__name">VK</span>
+                                <span class="social-link__arrow">→</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span class="social-link__name">GitHub</span>
+                                <span class="social-link__arrow">→</span>
+                            </a>
+                        </div>
+
+                        <div class="text-block mt-80">
+                            <h3>Сотрудничество</h3>
+                            <p>По вопросам рекламы, стримов и партнёрства — пиши на почту <span
+                                    style="color: var(--gold);">contact@shadowfall.game</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="nav__logo-mark">◆</span> SHADOWFALL
+                <p class="footer__copy">© 2025. Все права защищены.</p>
+            </div>
+            <nav class="footer__nav">
+                <a href="about.html">Об игре</a>
+                <a href="features.html">Особенности</a>
+                <a href="media.html">Медиа</a>
+                <a href="download.html">Скачать</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link">Discord</a>
+                <a href="#" class="footer__social-link">Telegram</a>
+                <a href="#" class="footer__social-link">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
